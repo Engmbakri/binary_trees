@@ -1,4 +1,5 @@
 #include "binary_trees.h"
+#include "limits.h"
 
 /**
  * is_bst_helper - Binary tree valid for search
