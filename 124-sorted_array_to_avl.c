@@ -54,10 +54,10 @@ avl_t *sorted_array_to_avl(int *array, size_t size)
 	c = (size / 2);
 	c = (size % 2 == 0) ? c - 1 : c;
 
-	root = binary_tree_node(root, array[c]);
+	j = binary_tree_node(j, array[c]);
 
-	create_tree(&root, array, c, 1);
-	create_tree(&root, array + c + 1, (size - 1 - c), 2);
+	create_tree(&j, array, c, 1);
+	create_tree(&j, array + c + 1, (size - 1 - c), 2);
 
-	return (root);
+	return (j);
 }
