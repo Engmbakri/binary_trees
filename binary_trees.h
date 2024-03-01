@@ -54,6 +54,7 @@ int binary_tree_is_bst(const binary_tree_t *tree);
 int is_bst_helper(const binary_tree_t *tree, int lo, int hi);
 bst_t *bst_search(const bst_t *tree, int value);
 avl_t *avl_insert(avl_t **tree, int value);
+avl_t *array_to_avl(int *array, size_t size);
 
 
 #endif
